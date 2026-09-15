@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FORJA — Business Rule Tests</title>
+  <style>
+    body { background: #0A0A0C; color: #F4F1EA; font-family: monospace; padding: 24px; }
+  </style>
+</head>
+<body>
+  <h1>FORJA — Business Rule Tests</h1>
+  <div id="results">Running...</div>
+  <script type="module">
+    import "./businessRules.test.js";
+    import { render } from "./testRunner.js";
+    render(document.getElementById("results"));
+  </script>
+</body>
+</html>

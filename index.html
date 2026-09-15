@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+  <title>FORJA</title>
+  <meta name="description" content="Organize sua rotina, mantenha a constância e veja seu progresso." />
+  <meta name="color-scheme" content="dark" />
+
+  <!-- App shell -->
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <meta name="theme-color" content="#0A0A0C" />
+  <link rel="icon" href="./src/assets/icons/icon-192.png" sizes="192x192" type="image/png" />
+
+  <!-- iOS standalone: Safari ignores most of the manifest -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="FORJA" />
+  <link rel="apple-touch-icon" href="./src/assets/icons/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/styles/tokens.css" />
+  <link rel="stylesheet" href="./src/styles/base.css" />
+  <link rel="stylesheet" href="./src/styles/components.css" />
+</head>
+<body>
+  <div id="app-frame">
+    <a class="skip-link" href="#app">Ir para o conteúdo</a>
+    <main id="app"></main>
+    <div id="overlay-root"></div>
+  </div>
+  <script type="module" src="./src/js/main.js"></script>
+</body>
+</html>

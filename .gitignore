@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Generated web payload (rebuild with: npm run build:www)
+www/
+
+# Generated single-file bundles (rebuild with: npm run bundle)
+forja-arquivo-unico.html
+forja-app.html
+forja-admin.html
+
+# Handover artefacts and test debris
+forja-codigo-para-desenvolvedora.zip
+forja-marco.png
+*.apk
+
+# Android build output. The android/ project itself IS committed, because its
+# manifest, icons and resources are edited by hand.
+android/build/
+android/app/build/
+android/.gradle/
+android/local.properties
+android/.idea/
+android/app/release/
+android/capacitor-cordova-android-plugins/
+
+# iOS build output (the ios/ project itself is committed when it exists)
+ios/App/Pods/
+ios/App/build/
+ios/App/App/public/
+DerivedData/
+
+# Editors and OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db

@@ -1,0 +1,28 @@
+{
+  "appId": "br.com.forja.app",
+  "appName": "FORJA",
+  "webDir": "www",
+  "backgroundColor": "#0A0A0C",
+  "android": {
+    "allowMixedContent": false,
+    "backgroundColor": "#0A0A0C"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 600,
+      "backgroundColor": "#0A0A0C",
+      "androidScaleType": "CENTER_CROP",
+      "showSpinner": false,
+      "launchAutoHide": true
+    },
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_icon_config_sample",
+      "iconColor": "#FF5A1F"
+    },
+    "StatusBar": {
+      "style": "DARK",
+      "backgroundColor": "#0A0A0C",
+      "overlaysWebView": false
+    }
+  }
+}

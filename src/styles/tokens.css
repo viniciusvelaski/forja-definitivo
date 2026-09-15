@@ -1,0 +1,103 @@
+:root {
+  /* Surfaces */
+  --bg-outside: #050507;
+  --bg-obsidian: #0A0A0C;
+  --surface-primary: #121216;
+  --surface-elevated: #18181D;
+  --surface-sunken: #0D0D10;
+
+  /* Heat + accents */
+  --ember-orange: #FF5A1F;
+  --ember-orange-soft: #FF7A3D;
+  --ember-orange-dim: #B8451A;
+  --forged-gold: #E8B04B;
+  --forged-gold-dim: #A87E33;
+  --rust-error: #C25742;
+
+  /* Text — all values checked for WCAG AA on obsidian */
+  --text-primary: #F4F1EA;
+  --text-secondary: #A9A49A;
+  --text-tertiary: #857F73;
+  --text-on-ember: #170800;
+
+  /* Lines: engraved rather than drawn */
+  --border-metal: rgba(244, 241, 234, 0.09);
+  --border-metal-strong: rgba(244, 241, 234, 0.18);
+  --engrave-highlight: rgba(255, 255, 255, 0.035);
+
+  /* Heat states */
+  --heat-cold: #4A4A52;
+  --heat-ember: #C4501E;
+  --heat-hot: #FF5A1F;
+  --heat-forged: #FF7A3D;
+  --heat-blazing: #FFC157;
+
+  /* Typography */
+  --font-heading: "Oswald", "Arial Narrow", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  --font-body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+
+  --text-display: 30px;
+  --text-h1: 24px;
+  --text-h2: 19px;
+  --text-body: 15px;
+  --text-small: 13px;
+  --text-micro: 11px;
+
+  /* Spacing — 4px grid */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
+
+  /* Motion */
+  --motion-touch: 130ms;
+  --motion-state: 220ms;
+  --motion-ring: 600ms;
+  --motion-reward: 800ms;
+  --motion-entry: 260ms;
+  --ease-standard: cubic-bezier(0.2, 0.7, 0.3, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --side-margin: 20px;
+  --frame-max: 480px;
+  --touch-min: 44px;
+}
+
+@media (max-width: 359px) {
+  :root {
+    --side-margin: 16px;
+    --text-display: 26px;
+    --text-h1: 21px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-touch: 0ms;
+    --motion-state: 0ms;
+    --motion-ring: 0ms;
+    --motion-reward: 0ms;
+    --motion-entry: 0ms;
+  }
+}
+
+/* In-app preference (Profile → Accessibility), independent of the OS setting. */
+:root[data-reduced-motion="true"] {
+  --motion-touch: 0ms;
+  --motion-state: 0ms;
+  --motion-ring: 0ms;
+  --motion-reward: 0ms;
+  --motion-entry: 0ms;
+}

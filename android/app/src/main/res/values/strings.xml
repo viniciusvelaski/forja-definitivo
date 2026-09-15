@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">FORJA</string>
+    <string name="title_activity_main">FORJA</string>
+    <string name="package_name">br.com.forja.app</string>
+    <string name="custom_url_scheme">br.com.forja.app</string>
+</resources>
